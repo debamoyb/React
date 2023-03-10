@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+<body id="root">
+    
+</body>
+<script>
+    let div = React.createElement('div',
+    {style:{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height:"96.8vh",
+        backgroundImage:"linear-gradient(to bottom right, #E7E6E4, #958A88)"
+    }},
+    [
+        React.createElement('div',
+        {style:{
+            backgroundColor:"white",
+            width:"320px",
+            height:"380px",
+            borderRadius:"20px",
+            boxShadow:"5px 5px 5px 5px rgba(0,0,0,.3)"
+        }},
+        [
+            React.createElement('img',
+            {src:"https://media.istockphoto.com/id/1163541636/photo/close-up-photo-handsome-he-him-his-guy-coder-make-take-selfies-blog-advising-web-agency-thumb.jpg?b=1&s=170667a&w=0&k=20&c=I7o0IPqqMz3LdspwvvbuGPdyu_XU6pumRGBxwPs3U6w=",
+            style:{
+                width:"320px",
+                height:"230px",
+                borderRadius:"20px 20px 0 0"
+            }},null),
+            React.createElement('button',
+            {style:{
+                position:"absolute",
+                display:"flex",
+                width:"30px",
+                height:"25px",
+                justifyContent:"center",
+                alignItems:"center",
+                margin:"-223px 0 0 10px",
+                fontSize:"16px",
+                border:"0",
+                backgroundColor:"#E33D6F",
+                color:"white",
+                borderRadius:"8px"
+            }},"+"),
+            React.createElement('i',{className:"fa fa-ellipsis-v",
+            style:{
+                position:"absolute",
+                display:"flex",
+                justifyContent:"flex-end",
+                margin:"-220px 10px 0 300px",
+                color:"#F7F9F9"
+            }},null),
+            React.createElement('h2',{style:{textAlign:"center",margin:"10px auto",fontWeight:"500"}},"Debamoy Banerjee"),
+            React.createElement('p',{style:{textAlign:"center",margin:"10px auto",fontSize:"12px",color:"#9E9E9E"}},"React UI Developer"),
+
+            React.createElement('div',{style:{display:"flex",justifyContent:"center",gap:"50px",textAlign:"center",margin:"25px auto"}},
+            [
+                React.createElement('div',null,
+                [
+                    React.createElement('p',{style:{color:"black",fontWeight:"500",fontSize:"20px",margin:"2px auto"}},"26"),
+                    React.createElement('p',{style:{color:"#9E9E9E",fontSize:"14px",margin:"0px auto"}},"Shoot"),
+                ]),
+                React.createElement('div',null,
+                [
+                    React.createElement('p',{style:{color:"black",fontWeight:"500",fontSize:"20px",margin:"2px auto"}},"94"),
+                    React.createElement('p',{style:{color:"#9E9E9E",fontSize:"14px",margin:"0px auto"}},"Following"),
+                ]),
+                React.createElement('div',null,
+                [
+                    React.createElement('p',{style:{color:"black",fontWeight:"500",fontSize:"20px",margin:"2px auto"}},"139"),
+                    React.createElement('p',{style:{color:"#9E9E9E",fontSize:"14px",margin:"0px auto"}},"Followers"),
+                ])
+            ])
+        ])
+    ])
+    ReactDOM.render(div,document.getElementById('root'))
+</script>
+</html>
