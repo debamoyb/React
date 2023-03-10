@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+<body id="root">
+    
+</body>
+<script>
+    let div = React.createElement('div',
+    {style:{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        minHeight:"97.5vh",
+        backgroundColor:"#E1C3D8"
+    }},
+    [
+        React.createElement('div',
+        {style:{
+            backgroundColor:"white",
+            width:"399px",
+            height:"416px",
+            borderRadius:"20px"
+        }},
+        [
+            React.createElement('img',
+            {src:"https://pbs.twimg.com/media/FjU2lkcWYAgNG6d.jpg",
+            style:{
+                borderRadius:"50%",
+                width:"120px",
+                height:"120px",
+                margin:"50px 140px 0px"
+            }},null),
+            React.createElement('img',
+            {src:"https://www.icons101.com/icon_png/size_512/id_82676/trafficlightgreen.png",
+            style:{
+                position:"absolute",
+                borderRadius:"50%",
+                width:"13px",
+                height:"13px",
+                border:"2px solid white",
+                margin:"-115px 238px 0px"
+            }},null),
+            React.createElement('div',null,
+            [
+                React.createElement('h2',{style:{textAlign:"center",color:"#6F6F6F",marginBottom:"0px"}},"Debamoy Banerjee"),
+                React.createElement('p',{style:{textAlign:"center",color:"grey",marginTop:"10px"}},"I enjoy drinking a cup of coffee every day"),
+            ]),
+            React.createElement('div',{style:{display:"flex",justifyContent:"space-evenly",textAlign:"center"}},
+            [
+                React.createElement('div',null,
+                [
+                    React.createElement('p',{style:{color:"#9B45E4",fontWeight:"700",fontSize:"22px",margin:"0px auto"}},"172"),
+                    React.createElement('p',{style:{color:"#969798",fontWeight:"bold",fontSize:"20px",margin:"0px auto"}},"Posts"),
+                ]),
+                React.createElement('div',null,
+                [
+                    React.createElement('p',{style:{color:"#9B45E4",fontWeight:"700",fontSize:"22px",margin:"0px auto"}},"47"),
+                    React.createElement('p',{style:{color:"#969798",fontWeight:"bold",fontSize:"20px",margin:"0px auto"}},"Followers"),
+                ]),
+                React.createElement('div',null,
+                [
+                    React.createElement('p',{style:{color:"#9B45E4",fontWeight:"700",fontSize:"22px",margin:"0px auto"}},"20"),
+                    React.createElement('p',{style:{color:"#969798",fontWeight:"bold",fontSize:"20px",margin:"0px auto"}},"Following"),
+                ])
+            ]),
+            React.createElement('div',
+            {style:{
+                display:"flex",
+                justifyContent:"center",
+                gap:"20px",
+                margin:"20px auto"
+            }},
+            [
+                React.createElement('button',
+                {style:{
+                    backgroundColor:"#9B45E4",
+                    color:"white",
+                    width:"130px",
+                    height:"50px",
+                    border:"0",
+                    textTransform:"Uppercase",
+                    fontSize:"18px",
+                    borderRadius:"10px"
+                }},"Follow"),
+                React.createElement('button',
+                {style:{
+                    backgroundColor:"#E13A9D",
+                    color:"white",
+                    width:"150px",
+                    height:"50px",
+                    border:"0",
+                    textTransform:"Uppercase",
+                    fontSize:"18px",
+                    borderRadius:"10px"
+                }},"Message")
+            ])
+        ])
+    ])
+    ReactDOM.render(div,document.getElementById('root'))
+</script>
+</html>
