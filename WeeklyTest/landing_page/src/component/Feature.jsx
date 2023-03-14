@@ -9,7 +9,7 @@ const Card = (props) => {
       </div>
       <div className='featureCardContent'>
         <h2>Fully Responsive</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere eaque doloremque dicta perspiciatis dolor pariatur sit alias tempora commodi.</p>
+        <p>Lorem ipsum is simply dummy text of the printing and typesetiing industry. Lorem ipsum has been the industry's</p>
         <a href="#0">Read More</a>
       </div>
     </div>

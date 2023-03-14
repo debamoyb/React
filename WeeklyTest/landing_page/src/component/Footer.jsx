@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="leftFooter">
             <div className="leftFooterInnerLeft">
                 <h3>ABOUT FLEX BUSINESS PRO</h3>    
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ullam voluptatibus natus voluptates, placeat iusto mollitia nam ab esse aliquid delectus ad suscipit molestiae expedita sit tenetur laudantium pariatur unde voluptas! Reprehenderit, facilis exercitationem quos dignissimos repellendus quisquam ipsum sint vel blanditiis, assumenda nostrum rem optio, ipsam itaque neque magni?</p>
+                <p>Lorem ipsum is simply dummy text of the printing and typesetiing industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s.Lorem ipsum is simply dummy text of the printing and typesetiing industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s.</p>
             </div>    
             <div className="leftFooterInnerRight">
                 <h3>RECENT POSTS</h3>

@@ -8,7 +8,7 @@ const Nav = () => {
             <p>Clean and Modern Business Theme</p>
         </div>
         <div className="right">
-            <div style={{color: "skyblue"}}>Home</div>            
+            <div style={{color: "#7FA8E0"}}>Home</div>            
             <div>About Us</div>            
             <div>Styleguide</div>            
             <div>Blog</div>            
