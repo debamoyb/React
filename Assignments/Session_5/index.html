@@ -14,8 +14,25 @@
 </body>
 <script type="text/babel">
     let div = 
-    <div>
-
+    <div style={{fontFamily: "cursive",margin:"0",backgroundImage:"url(https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",backgroundSize:" cover"}}>
+        <div style={{backgroundColor:"black",display:"flex",justifyContent:'space-between'}} >
+            <div style={{height:"8vh",width:"10vw",display:"flex",justifyContent:"center",alignItems:"center"}} ><h3 style={{color:"white",fontSize:"2rem"}} >LOGO</h3>
+            </div>
+            <div style={{display:"flex",justifyContent:"space-evenly",width:"30vw",alignItems:"center"}}>
+                <a style={{color:"white",textDecoration:"none",fontSize:"14px"}} href="#">HOME</a>
+                <a style={{color:"white",textDecoration:"none",fontSize:"14px"}} href="#">ABOUT</a>
+                <a style={{color:"white",textDecoration:"none",fontSize:"14px"}} href="#">MENU</a>
+                <a style={{color:"white",textDecoration:"none",fontSize:"14px"}} href="#">ORDER</a>
+                <a style={{color:"white",textDecoration:"none",fontSize:"14px"}} href="#">CONTACT</a>
+            </div>
+        </div>
+        <div style={{height:"88vh",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"space-between"}}>
+            <h1 style={{color:"Black",fontSize:"40px"}}>Home</h1>
+            <div>
+                <span style={{color:"white"}}>Made with ❤ by </span>
+                <span style={{color:"magenta"}}>Debamoy Banerjee</span>
+            </div>
+        </div>
     </div>
     ReactDOM.render(div,document.getElementById('root'))
 </script>
