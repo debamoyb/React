@@ -27,14 +27,11 @@ function AddItem(){
         <div>
             <h1>To-Do List</h1>
             <input style={{height:"20px"}} value={state} 
-                type="text" 
-             onChange={(e)=>
-             {
+                type="text" onChange={(e)=> {
                 setState(e.target.value)
-                }
-                }/>&nbsp;&nbsp;&nbsp;
-            <button onClick={additem}
-            style={{width:"70px",height:"25px",border:"0",backgroundColor:"Lightblue"}}>ADD</button>
+                }}
+            />&nbsp;&nbsp;&nbsp;
+            <button onClick={additem} style={{width:"70px",height:"25px",border:"0",backgroundColor:"Lightblue"}}>ADD</button>
             <TodoItem todoitem={todoitems} deleteItem={deleteItem} endItem={endItem} />
         </div>
     )
