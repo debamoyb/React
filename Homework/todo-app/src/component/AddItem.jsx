@@ -1,11 +1,11 @@
 import { useState } from "react"
 import TodoItem from "./TodoItem"
 function AddItem(){
-    const [state,setState]=useState("")
+    const [input,setInput]=useState("")
     const [todoitems,setTodoItems]=useState([])
     const additem=()=>{
         var newItem={
-            title:state,
+            title:input,
             status:false
         }
         setTodoItems([...todoitems,newItem])
@@ -26,12 +26,12 @@ function AddItem(){
     return (
         <div>
             <h1>To-Do List</h1>
-            <input style={{height:"20px"}} value={state} 
+            <input style={{height:"20px"}} value={input} 
                 type="text" onChange={(e)=> {
-                setState(e.target.value)
+                setInput(e.target.value)
                 }}
-            />&nbsp;&nbsp;&nbsp;
-            <button onClick={additem} style={{width:"70px",height:"25px",border:"0",backgroundColor:"Lightblue"}}>ADD</button>
+            />
+            <button onClick={additem} style={{width:"70px",height:"25px",border:"0",backgroundColor:"Lightblue",marginLeft:"20px"}}>ADD</button>
             <TodoItem todoitem={todoitems} deleteItem={deleteItem} endItem={endItem} />
         </div>
     )
