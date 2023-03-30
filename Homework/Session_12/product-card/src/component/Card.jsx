@@ -8,7 +8,7 @@ const Card = ({ title, price, image }) => {
         </div>
         <div className="card-bottom">
             <h5>{ title }</h5>
-            <p>₹ { price }</p>
+            <p>$ { price }</p>
             <div className="card-btn">Click me</div>
         </div>
     </div>
