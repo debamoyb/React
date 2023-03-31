@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+.container {
+    padding: 50px;
+    background: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.container table thead tr > th {
+    background-color: black;
+    color: white;
+    padding: 10px;
+  }
+.table-container tr > td {
+    width: 250px;
+    padding: 5px;
+    background-color: skyblue;
+    text-align: center;
+    border: 1px solid skyblue;
+  }
+  .table-container tr > td:nth-child(3){
+    text-transform: capitalize;
+    width: 100px;
+  }
+  .table-container tr > td:nth-child(1){
+    width: 200px;
+  }
