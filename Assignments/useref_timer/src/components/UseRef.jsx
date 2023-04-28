@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-const Useref = () => { 
+const UseRef = () => { 
   const [timer,setTimer] = useState(0);
 
   let timerId = useRef(null);
@@ -43,4 +43,4 @@ const Useref = () => {
   )
 }
 
-export default Useref
+export default UseRef;
