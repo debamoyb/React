@@ -11,7 +11,7 @@ const Login = (props) => {
     })
 
     const handleClick =()=>{
-        if(user.name==="debamoy" && user.password==="debvumi27"){
+        if(user.name==="" && user.password===""){
             setIsLoggedIn(true);
         }
         else{
