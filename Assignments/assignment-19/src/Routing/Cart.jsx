@@ -10,6 +10,7 @@ function Cart(props) {
         
         
         <div className='myCart' style={{display:'flex',justifyContent:'space-evenly',alignItems:'center',flexDirection:"column"}}>
+            <h1>My Cart</h1>
             {manipulateCart.map(e=>{return (
                 
     <div className="shop"  style={{width:'100vw' ,marginLeft:'20px',marginRight:'20px',display:'flex', justifyContent:'space-between', alignItems:'center'}}>

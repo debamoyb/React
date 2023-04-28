@@ -1,14 +1,11 @@
-import React, { useContext, useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 import { AuthContext } from '../components/Context';
-
+import { useContext } from 'react';
 const API = 'https://fakestoreapi.com/products';
 function Products(props) {
 
     const [products,setProducts] = useState([]);
     const{addToCart} =useContext(AuthContext);
-    
-
     useEffect(()=>{
         fetch(API)
         .then(res=>res.json())
@@ -20,8 +17,6 @@ function Products(props) {
         
     },[]);
 
-   
-
     return (
         <div style={{textAlign:'center'}}>
             <h1>Products</h1>
@@ -30,7 +25,6 @@ function Products(props) {
             {
                 products.length>0?<div className='productSection'>
                     {products.map((item)=>{
-                        
                         const obj={
                             id:item.id,
                             name:item.title,
@@ -39,15 +33,14 @@ function Products(props) {
 
                         }
 
+
                        return(
                        <div className='card'>
                         <img width={'100px'} height={'100px'} src={item.image} alt="" />
                         <h4>{item.title}</h4>
                     
                         <h4 className='price' style={{color:"orange"}}>Price : {item.price} $</h4>
-                        <Link to ={`/details/${item.id}`}><button>Product details</button></Link><br />
                         <button onClick={()=>addToCart(obj)}>Add to Cart</button>
-                        
                         </div>
                         )
                     })}
