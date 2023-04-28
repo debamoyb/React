@@ -22,7 +22,7 @@ function Input(props) {
 
     return (
         <div style={{display:'flex',justifyContent:'space-evenly', alignItems:'center'}}>
-            <button onClick={dispatch1}>Increace</button>
+            <button onClick={dispatch1}>Increase</button>
             <button onClick={dispatch2}>Decrease</button>
             <button onClick={dispatch3}>Reset</button>
         </div>
